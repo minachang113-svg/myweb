@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人作品集 | 大學四年專案成果展</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入 Google Fonts 提升質感 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 導覽列 -->
+  <nav class="navbar">
+    <div class="logo">YOUR NAME.</div>
+    <ul class="nav-links">
+      <li><a href="#about">關於我</a></li>
+      <li><a href="#projects">專案成果</a></li>
+      <li><a href="#contact">聯絡方式</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero 英雄區塊 / 個人品牌主視覺 -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">你好，我是 <span class="highlight">[ 你的姓名 ]</span></h1>
+      <p class="hero-subtitle">大一至大四 專案作業與學習歷程典藏庫</p>
+      <p class="hero-desc">專注於 [ 你的主修 / 專業領域 ] ｜ 探索數據、設計與空間規劃的無限可能性</p>
+      <a href="#projects" class="btn">瀏覽作品集</a>
+    </div>
+  </header>
+
+  <!-- 關於我 -->
+  <section id="about" class="section">
+    <h2 class="section-title">關於我 (About Me)</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <p>歡迎來到我的個人品牌網站！這裡記錄了我大學四年間累積的各項專案、研究與課程作業。</p>
+        <p>我熱衷於透過系統化的思考與實務分析來解決複雜問題，並持續增進跨領域的綜合能力。</p>
+      </div>
+      <div class="skills-tags">
+        <span class="tag">專案管理</span>
+        <span class="tag">區域規劃 / 分析</span>
+        <span class="tag">數據整理</span>
+        <span class="tag">文獻回顧</span>
+        <span class="tag">簡報表達</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 專案展示區 -->
+  <section id="projects" class="section alt-bg">
+    <h2 class="section-title">專案作業成果 (Projects)</h2>
+
+    <!-- 年級分類篩選按鈕 -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="freshman">大一</button>
+      <button class="filter-btn" data-filter="sophomore">大二</button>
+      <button class="filter-btn" data-filter="junior">大三</button>
+      <button class="filter-btn" data-filter="senior">大四</button>
+    </div>
+
+    <!-- 專案卡片網格 -->
+    <div class="projects-grid">
+
+      <!-- 大一卡片 -->
+      <div class="project-card freshman" data-title="基礎專案導論作業" data-desc="大一時期完成的基礎學術與專案實作成果，奠定研究與分析的基本功。" data-tags="大一, 基礎研究">
+        <div class="card-tag">大一 (Freshman)</div>
+        <h3 class="card-title">基礎專案導論作業</h3>
+        <p class="card-desc">大一時期完成的基礎學術與專案實作成果...</p>
+        <button class="card-btn">查看詳情</button>
+      </div>
+
+      <!-- 大二卡片 -->
+      <div class="project-card sophomore" data-title="進階實務與資料分析" data-desc="結合團隊合作與專題分析，探討特定主題並呈現完整報告。" data-tags="大二, 團隊合作">
+        <div class="card-tag">大二 (Sophomore)</div>
+        <h3 class="card-title">進階實務與資料分析</h3>
+        <p class="card-desc">結合團隊合作與專題分析，探討特定主題...</p>
+        <button class="card-btn">查看詳情</button>
+      </div>
+
+      <!-- 大三卡片 -->
+      <div class="project-card junior" data-title="核心專業研究專案" data-desc="針對核心專業領域進行深入探討與模型/架構建立。" data-tags="大三, 核心研究">
+        <div class="card-tag">大三 (Junior)</div>
+        <h3 class="card-title">核心專業研究專案</h3>
+        <p class="card-desc">針對核心專業領域進行深入探討...</p>
+        <button class="card-btn">查看詳情</button>
+      </div>
+
+      <!-- 大四卡片 -->
+      <div class="project-card senior" data-title="畢業專題 / 綜合整合計畫" data-desc="大學四年集大成之作，涵蓋文獻分析、實務規劃與完整 AI 協作紀錄。" data-tags="大四, 畢業專題">
+        <div class="card-tag">大四 (Senior)</div>
+        <h3 class="card-title">畢業專題 / 綜合整合計畫</h3>
+        <p class="card-desc">大學四年集大成之作，涵蓋文獻分析...</p>
+        <button class="card-btn">查看詳情</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 聯絡資訊 -->
+  <footer id="contact" class="footer">
+    <h2>聯絡方式 (Contact)</h2>
+    <p>如果您對我的專案或合作有興趣，歡迎隨時與我聯繫！</p>
+    <div class="contact-links">
+      <a href="mailto:your.email@example.com">Email Me</a>
+      <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a>
+    </div>
+    <p class="copyright">&copy; 2026 Your Name. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Modal 彈出視窗（點擊卡片顯示詳細內容） -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3 id="modal-title">專案名稱</h3>
+      <div id="modal-tags" class="modal-tags"></div>
+      <p id="modal-desc">專案詳細說明與紀錄...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
