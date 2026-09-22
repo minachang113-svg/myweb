@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>簡單的HTML範例 + 外部CSS範例</title>
+    <!-- /* 全域與背景設定 */
+body {
+    background: #0066CC;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #0080FF;
+}
+
+h2 {
+    color: #84C1FF;
+}
+
+h3 {
+    color: #ACD6FF;
+}
+
+/* 連結基本與懸停樣式 */
+a:link {
+    color: #DDDDFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C4E1FF;
+}
+
+/* 圖片展示區塊與滑鼠動態效果 */
+.image-gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.image-item {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 滑鼠滑過去時產生的動態效果（放大並加上陰影） */
+.image-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.image-item img {
+    width: 200px;  /* 可自行調整圖片顯示寬度 */
+    height: 150px; /* 可自行調整圖片顯示高度 */
+    object-fit: cover;
+    display: block;
+} -->
+    <link rel="stylesheet" href="U1558013.css">
+</head>
+
+<body>
+
+    <h1>歡迎來到我的網站</h1>
+
+    <h2>
+        <a href="https://www.nuu.edu.tw/">關於我</a>
+    </h2>
+
+    <h3>
+        <p>這是一個簡單的HTML範例，展示了基本的網頁結構與外部CSS。</p>
+    </h3>
+
+    <!-- 五個圖片展示區塊 -->
+    <h2>圖片藝廊（滑鼠懸停有動態效果，點擊可開啟新網頁）</h2>
+    <div class="image-gallery">
+
+        <!-- 圖片 1 -->
+        <a href="https://www.nuu.edu.tw/" target="_blank" class="image-item">
+            <img src="0.jpg" alt="圖片 1">
+        </a>
+
+        <!-- 圖片 2 -->
+        <a href="https://www.nuu.edu.tw/" target="_blank" class="image-item">
+            <img src="1.jpg" alt="圖片 2">
+        </a>
+
+        <!-- 圖片 3 -->
+        <a href="https://www.nuu.edu.tw/" target="_blank" class="image-item">
+            <img src="2.jpg" alt="圖片 3">
+        </a>
+
+        <!-- 圖片 4 -->
+        <a href="https://www.nuu.edu.tw/" target="_blank" class="image-item">
+            <img src="3.jpg" alt="圖片 4">
+        </a>
+
+        <!-- 圖片 5 -->
+        <a href="https://www.nuu.edu.tw/" target="_blank" class="image-item">
+            <img src="4.jpg" alt="圖片 5">
+        </a>
+
+    </div>
+
+</body>
+
+</html>
